@@ -1,0 +1,71 @@
+# Site settings
+title: Sun0905's Blog
+SEOTitle: 小琐的小碎 | Sun0905's Blog
+header-img: img/home-bg.jpg
+email: 846251764@qq.com
+description: "小琐的小碎"
+keyword: ""
+url: "http://sun0905.me"              # your host, for absolute URL
+baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
+
+timezone: Asia/Shanghai
+
+# SNS settings
+RSS: false
+#zhihu_username:    yuandghn
+github_username:    Sun0905
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+highlighter: rouge
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","start.sh","yuandghn.github.io.iml"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+gems: [jekyll-paginate]
+
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+
+# Disqus settings
+#disqus_username: echoyuan-me
+
+
+# Analytics settings
+# Baidu Analytics
+#ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
+# Google Analytics
+ga_track_id: 'UA-100324645-2'            # Format: UA-xxxxxx-xx
+ga_domain: sun0905.me
+
+
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "生活琐碎，随意写写。"
+sidebar-avatar: /img/avatar-sunny.jpeg      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+
+
+# Friends
+friends: [
+    {
+        title: "Echo's Blog",
+        href: "http://echoyuan.me"
+    }
+]
